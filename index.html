@@ -1,15 +1,50 @@
+<!DOCTYPE html>
 <html>
-  <body>
-    <h1>Sumador</h1>
-    <form id="sumar-form">
-      <label for="primer-numero">Primer número:</label>
-      <input type="number" id="primer-numero" />
-      <label for="segundo-numero">Segundo número:</label>
-      <input type="number" id="segundo-numero" />
-      <input type="submit" value="Sumar" id="sumar-button" />
+<head>
+    <title>Calculadora de Puntaje</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Puntaje</h1>
+    <form id="calcular-form">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" />
+        <label for="cantidad-pruebas">Cantidad de Pruebas:</label>
+        <input type="number" id="cantidad-pruebas" />
+        <label for="cantidad-lineas">Cantidad de Líneas:</label>
+        <input type="number" id="cantidad-lineas" />
+        <label for="cobertura">Cobertura:</label>
+        <input type="number" id="cobertura" />
+        <input type="submit" value="Calcular Puntaje" id="calcular-button" />
     </form>
-    <div id="resultado-div"></div>
+    <table id="datos-ingresados">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Cantidad de Pruebas</th>
+                <th>Cantidad de Líneas</th>
+                <th>Cobertura</th>
+            </tr>
+        </thead>
+        <tbody id="datos-ingresados-body"></tbody>
+    </table>
 
     <script type="module" src="./src/presenter.js"></script>
-  </body>
+</body>
 </html>

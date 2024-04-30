@@ -1,7 +1,11 @@
-import sumar from "./totalizador.js";
+import  calcularPuntaje  from "./totalizador.js";
 
-describe("Sumar", () => {
-  it("deberia sumar dos numeros", () => {
-    expect(sumar(3, 2)).toEqual(5);
+describe("Totalizador", () => {
+
+  it("debería devolver la cantidad introducida", () => {
+    
+    expect(calcularPuntaje(10)).toEqual(10);
   });
+ 
 });
+

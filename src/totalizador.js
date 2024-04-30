@@ -1,5 +1,6 @@
-function sumar(a, b) {
-  return a + b;
+function calcularPuntaje(cantidad) {
+    
+   return cantidad;
 }
 
-export default sumar;
+export default calcularPuntaje ;
