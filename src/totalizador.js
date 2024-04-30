@@ -1,6 +1,10 @@
-function calcularPuntaje(cantidad) {
-    
-   return cantidad;
-}
+let puntaje = 0;
 
-export default calcularPuntaje ;
+function calcularPuntaje(cantidad,cantidadPruebas, cantidadLineas, cobertura) {
+    
+   puntaje = cantidad + cantidadPruebas + cantidadLineas + cobertura;
+}
+function obtenerPuntaje() {
+  return puntaje;
+}
+export { calcularPuntaje, obtenerPuntaje };
