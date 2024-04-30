@@ -1,7 +1,10 @@
 import  {obtenerPuntaje,calcularPuntaje} from "./totalizador.js";
 
 describe("Totalizador", () => {
-
+  beforeEach(() => {
+    // Reiniciar el puntaje antes de cada prueba
+    calcularPuntaje(0, 0, 0, 0);
+});
   /*it("debería devolver la cantidad introducida", () => {
     
     expect(calcularPuntaje(10)).toEqual(10);
