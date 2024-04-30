@@ -20,8 +20,11 @@ form.addEventListener("submit", (event) => {
         <td>${cantidadPruebas}</td>
         <td>${cantidadLineas}</td>
         <td>${cobertura}</td>
+        <td><button class="eliminar-button">Eliminar</button></td>
     `;
     tablaDatosBody.appendChild(newRow);
-
-    form.reset();
+     // Agregar evento de click al botón de eliminar
+     newRow.querySelector(".eliminar-button").addEventListener("click", () => {
+      tablaDatosBody.removeChild(newRow);
+  });
 });
