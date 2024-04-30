@@ -15,5 +15,11 @@ describe("Totalizador", () => {
     calcularPuntaje(10, 20, 30, 40);
     expect(obtenerPuntaje()).toEqual(25);
   });
+
+  it("debería calcular el puntaje correctamente con un nombre", () => {
+    calcularPuntaje(10, 20, 30, 40);
+    expect(obtenerPuntaje()).toEqual(25);
+  });
+
 });
 

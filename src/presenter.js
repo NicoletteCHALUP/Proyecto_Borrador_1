@@ -5,7 +5,7 @@ const tablaDatosBody = document.querySelector("#datos-ingresados-body");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
+    const nombre = document.querySelector("#nombre").value;
     const cantidad = document.querySelector("#cantidad").value;
     const cantidadPruebas = document.querySelector("#cantidad-pruebas").value;
     const cantidadLineas = document.querySelector("#cantidad-lineas").value;
@@ -15,6 +15,7 @@ form.addEventListener("submit", (event) => {
 
     const newRow = document.createElement("tr");
     newRow.innerHTML = `
+        <td>${nombre}</td>
         <td>${cantidad}</td>
         <td>${cantidadPruebas}</td>
         <td>${cantidadLineas}</td>
